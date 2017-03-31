@@ -1,17 +1,3 @@
-/*
- *  *  Solution to Producer Consumer Problem
- *   *  Using Ptheads, a mutex and condition variables
- *    *  From Tanenbaum, Modern Operating Systems, 3rd Ed.
- *     */
-
-/*
- *   In this version the buffer is a single number.
- *      The producer is putting numbers into the shared buffer
- *          (in this case sequentially)
- *             And the consumer is taking them out.
- *                  If the buffer contains zero, that indicates that the buffer is empty.
- *              Any other value is valid.
- *                         */
 
 #include <stdio.h>
 #include <pthread.h>
